@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>VerdePay</title>
+<style>
+*{box-sizing:border-box}
+body{margin:0;font-family:Arial,sans-serif;background:#f3f7f4;color:#183c2b}
+header{background:#087443;color:white;padding:24px 20px;border-radius:0 0 22px 22px}
+header h1{margin:0;font-size:27px}
+header p{margin:7px 0 0;color:#d8f5e5}
+main{padding:18px;max-width:650px;margin:auto}
+.card{background:white;padding:20px;border-radius:18px;margin-bottom:16px;box-shadow:0 3px 14px #183c2b10}
+.balance{background:#087443;color:white}
+.balance small{color:#d8f5e5}
+.balance h2{font-size:32px;margin:12px 0}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.action{background:#e4f3e9;border:0;padding:17px;border-radius:13px;color:#087443;font-weight:bold}
+h3{margin-top:0}
+button{cursor:pointer}
+.notice{font-size:13px;color:#65776c;line-height:1.5}
+footer{text-align:center;color:#65776c;font-size:12px;padding:20px}
+</style>
+</head>
+<body>
+<header>
+<h1>VerdePay</h1>
+<p>La tua esperienza finanziaria digitale</p>
+</header>
+<main>
+<div class="card balance">
+<small>Saldo disponibile</small>
+<h2>— €</h2>
+<p>Conto non collegato</p>
+</div>
+
+<div class="grid">
+<button class="action" onclick="alert('Servizio non ancora attivo')">↗ Bonifico</button>
+<button class="action" onclick="alert('Servizio non ancora attivo')">＋ Ricevi</button>
+<button class="action" onclick="alert('Nessuna carta attiva')">▣ Le mie carte</button>
+<button class="action" onclick="alert('Nessuna operazione disponibile')">◷ Movimenti</button>
+</div>
+
+<div class="card" style="margin-top:18px">
+<h3>Il mio conto</h3>
+<p>IBAN: Non disponibile</p>
+<p>Stato: Conto non collegato</p>
+</div>
+
+<div class="card">
+<h3>Notifiche</h3>
+<p>Nessuna nuova notifica.</p>
+</div>
+
+<div class="card">
+<h3>Assistenza clienti</h3>
+<p>Hai bisogno di aiuto?</p>
+<button class="action" onclick="alert('Assistenza non ancora attiva')">Contatta l'assistenza</button>
+</div>
+
+<div class="card notice">
+<strong>Informazione importante</strong><br>
+Servizi bancari non ancora attivi. Nessun conto bancario collegato e nessuna transazione reale disponibile. Questa applicazione non è affiliata a una banca.
+</div>
+</main>
+<footer>VerdePay · Servizi in fase di attivazione</footer>
+</body>
+</html>
